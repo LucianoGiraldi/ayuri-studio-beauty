@@ -1,13 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ServicesPreview from "@/components/ServicesPreview";
+import AboutPreview from "@/components/AboutPreview";
+import TestimonialsPreview from "@/components/TestimonialsPreview";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Ayuri Nails Studio | Nail Design & Beleza Feminina em Maringá</title>
+        <meta
+          name="description"
+          content="Ayuri Nails Studio em Maringá-PR: unhas artísticas, manicure, pedicure, depilação, sobrancelhas e limpeza de pele. Agende seu horário!"
+        />
+        <meta
+          name="keywords"
+          content="unhas, nail design, manicure, pedicure, depilação, sobrancelha, limpeza de pele, beleza feminina, Maringá, PR"
+        />
+        <link rel="canonical" href="https://ayurinailsstudio.com.br" />
+      </Helmet>
+
+      <Navbar />
+      <main>
+        <Hero />
+        <ServicesPreview />
+        <AboutPreview />
+        <TestimonialsPreview />
+        <CTASection />
+      </main>
+      <Footer />
+    </>
   );
 };
 
