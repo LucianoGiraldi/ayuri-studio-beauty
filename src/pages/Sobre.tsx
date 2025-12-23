@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Check } from "lucide-react";
 import studioImage from "@/assets/studio-interior.jpg";
+import ayuriIcon from "@/assets/ayuri-icon.ico";
 
 const values = [
   {
@@ -32,6 +33,7 @@ const Sobre = () => {
           name="description"
           content="Conheça a história do Ayuri Nails Studio em Maringá. Um espaço dedicado à beleza feminina com técnicas modernas e atendimento personalizado."
         />
+        <link rel="icon" href={ayuriIcon} /> 
       </Helmet>
 
       <Navbar />

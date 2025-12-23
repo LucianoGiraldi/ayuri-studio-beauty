@@ -2,27 +2,35 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Instagram, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-nails.jpg";
-import studioImage from "@/assets/studio-interior.jpg";
+import ayuriIcon from "@/assets/ayuri-icon.ico";
+import NailArt from "@/assets/nail-art.jpg";
+import Sobrancelha from "@/assets/design-sobrancelha.jpg";
+import EsmaltacaoGel from "@/assets/esmaltacao-gel.jpg";
+import decoracao from "@/assets/decoracao-exclusiva.jpg";
+import Vermelha from "@/assets/vermelha.jpg";
+import limpezapele from "@/assets/limpeza-pele.mp4";
+
+
 
 const portfolioItems = [
-  { image: heroImage, title: "Nail Art Elegante", category: "Nail Design" },
-  { image: studioImage, title: "Nosso Espaço", category: "Studio" },
-  { image: heroImage, title: "Esmaltação em Gel", category: "Gel" },
-  { image: studioImage, title: "Ambiente Acolhedor", category: "Studio" },
-  { image: heroImage, title: "Design Francesinha", category: "Nail Design" },
-  { image: studioImage, title: "Tratamentos", category: "Serviços" },
+  { image: NailArt, title: "Nail Art Elegante", category: "Nail Design" },
+  { image: Sobrancelha, title: "Design de Sobrancelha", category: "Sobrancelhas" },
+  { image: EsmaltacaoGel, title: "Esmaltação em Gel", category: "Gel" },
+  { image: Vermelha, title: "Esmaltação em gel com glitter", category: "Nail Design" },
+  { image: decoracao, title: "Decoração Exclusiva", category: "Nail Design" },
+  { image: limpezapele, title: "Limpeza de pele", category: "Serviços" },
 ];
 
 const Portfolio = () => {
   return (
     <>
       <Helmet>
-        <title>Portfólio | Ayuri Nails Studio - Maringá PR</title>
+        <title>Portfólio | Ayuri Nails Studio </title>
         <meta
           name="description"
           content="Veja nossos trabalhos de nail design, alongamento de unhas e muito mais. Inspiração para suas unhas no Ayuri Nails Studio em Maringá."
         />
+        <link rel="icon" href={ayuriIcon} />
       </Helmet>
 
       <Navbar />
@@ -56,12 +64,23 @@ const Portfolio = () => {
                   className="group relative aspect-square rounded-lg overflow-hidden animate-fade-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  {item.image.toLowerCase().endsWith(".mp4") ? (
+                    <video
+                      src={item.image}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      playsInline
+                      loop
+                      muted
+                      controls
+                    />
+                  ) : (
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 pointer-events-none">
                     <div>
                       <span className="text-primary-foreground/80 text-xs uppercase tracking-wider">
                         {item.category}

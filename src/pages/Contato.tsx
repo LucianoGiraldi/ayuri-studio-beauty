@@ -2,32 +2,40 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Phone, Clock, Instagram, ArrowRight } from "lucide-react";
+import fachadaImage from "@/assets/fachada.png";
+import ayuriIcon from "@/assets/ayuri-icon.ico";
 
 const Contato = () => {
   return (
     <>
       <Helmet>
-        <title>Contato | Ayuri Nails Studio - Maringá PR</title>
+        <title>Contato | Ayuri Nails Studio</title>
         <meta
           name="description"
           content="Entre em contato com o Ayuri Nails Studio em Maringá. Endereço: R. Santos Dumont, 3054 - Sala A, Zona 01. WhatsApp: (44) 99897-6408."
         />
+        <link rel="icon" href={ayuriIcon} />
       </Helmet>
 
       <Navbar />
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-soft">
+        <section
+          className="section-padding bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(rgba(12, 14, 18, 0.70), rgba(12, 14, 18, 0.70)), url(${fachadaImage})`,
+          }}
+        >
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto animate-fade-up">
               <span className="inline-block font-body text-sm tracking-[0.3em] uppercase text-primary mb-4">
                 Contato
               </span>
-              <h1 className="heading-display text-foreground mb-6">
+              <h1 className="heading-display text-white mb-6">
                 Fale
                 <span className="italic block">conosco</span>
               </h1>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-white text-lg">
                 Estamos prontas para atender você! Entre em contato pelo WhatsApp 
                 ou venha nos visitar em nosso studio.
               </p>
@@ -93,7 +101,8 @@ const Contato = () => {
                         Horário de Funcionamento
                       </h3>
                       <p className="text-muted-foreground">
-                        Segunda a Sábado: 9h às 19h<br />
+                        Segunda a Sexta - 8h às 19h<br />
+                        Sábado - 8h às 17h<br />
                         Domingo: Fechado
                       </p>
                     </div>

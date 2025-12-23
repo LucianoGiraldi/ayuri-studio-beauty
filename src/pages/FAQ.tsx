@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ayuriIcon from "@/assets/ayuri-icon.ico";
 
 const faqs = [
   {
@@ -55,11 +56,12 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ | Ayuri Nails Studio - Perguntas Frequentes</title>
+        <title>FAQ | Ayuri Nails Studio</title>
         <meta
           name="description"
           content="Tire suas dúvidas sobre os serviços do Ayuri Nails Studio em Maringá. Perguntas frequentes sobre agendamento, procedimentos e mais."
         />
+        <link rel="icon" href={ayuriIcon} />
       </Helmet>
 
       <Navbar />

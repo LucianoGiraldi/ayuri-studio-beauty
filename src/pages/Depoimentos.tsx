@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Star, Quote } from "lucide-react";
+import ayuriIcon from "@/assets/ayuri-icon.ico";
 
 const testimonials = [
   {
@@ -46,11 +47,12 @@ const Depoimentos = () => {
   return (
     <>
       <Helmet>
-        <title>Depoimentos | Ayuri Nails Studio - Maringá PR</title>
+        <title>Depoimentos | Ayuri Nails Studio</title>
         <meta
           name="description"
           content="Veja o que nossas clientes dizem sobre o Ayuri Nails Studio. Depoimentos reais de mulheres que amam nossos serviços de beleza em Maringá."
         />
+        <link rel="icon" href={ayuriIcon} />
       </Helmet>
 
       <Navbar />

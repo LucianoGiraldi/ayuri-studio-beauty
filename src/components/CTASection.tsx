@@ -50,7 +50,9 @@ const CTASection = () => {
               <Clock className="w-6 h-6 text-primary mx-auto mb-3" />
               <h4 className="font-display font-medium text-foreground mb-2">Horário</h4>
               <p className="text-muted-foreground text-sm">
-                Seg - Sáb: 9h às 19h<br />Domingo: Fechado
+                Seg - Sex: 8h às 19h<br />
+                Sáb: 8h às 17h<br />
+                Domingo: Fechado
               </p>
             </div>
             <div className="bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-border/50">

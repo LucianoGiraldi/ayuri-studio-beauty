@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ArrowRight, Sparkles, Hand, Eye, Droplets, Heart, Star, Scissors, Sun } from "lucide-react";
+import ayuriIcon from "@/assets/ayuri-icon.ico";
 
 const services = [
   {
@@ -58,7 +59,7 @@ const Servicos = () => {
   return (
     <>
       <Helmet>
-        <title>Serviços | Ayuri Nails Studio - Maringá PR</title>
+        <title>Serviços | Ayuri Nails Studio</title>
         <meta
           name="description"
           content="Conheça todos os serviços do Ayuri Nails Studio: unhas, depilação, sobrancelhas, limpeza de pele e muito mais. Agende seu horário em Maringá!"
@@ -67,6 +68,7 @@ const Servicos = () => {
           name="keywords"
           content="manicure Maringá, pedicure, alongamento de unhas, depilação, design de sobrancelhas, limpeza de pele"
         />
+        <link rel="icon" href={ayuriIcon} />
       </Helmet>
 
       <Navbar />

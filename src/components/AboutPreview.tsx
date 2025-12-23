@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Check } from "lucide-react";
-import studioImage from "@/assets/studio-interior.jpg";
+import studioImage from "@/assets/logo-fachada.png";
 
 const features = [
   "Ambiente acolhedor e higienizado",

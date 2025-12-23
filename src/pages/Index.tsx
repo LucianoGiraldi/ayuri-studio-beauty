@@ -6,12 +6,13 @@ import AboutPreview from "@/components/AboutPreview";
 import TestimonialsPreview from "@/components/TestimonialsPreview";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import ayuriIcon from "@/assets/ayuri-icon.ico";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Ayuri Nails Studio | Nail Design & Beleza Feminina em Maringá</title>
+        <title>Ayuri Nails Studio</title>
         <meta
           name="description"
           content="Ayuri Nails Studio em Maringá-PR: unhas artísticas, manicure, pedicure, depilação, sobrancelhas e limpeza de pele. Agende seu horário!"
@@ -21,6 +22,7 @@ const Index = () => {
           content="unhas, nail design, manicure, pedicure, depilação, sobrancelha, limpeza de pele, beleza feminina, Maringá, PR"
         />
         <link rel="canonical" href="https://ayurinailsstudio.com.br" />
+        <link rel="icon" href={ayuriIcon} />
       </Helmet>
 
       <Navbar />
