@@ -118,9 +118,14 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm text-center md:text-left">
             © {currentYear} Ayuri Nails Studio. Todos os direitos reservados.
           </p>
-          <p className="text-muted-foreground text-xs">
+          <a
+            href="https://lp.buenomaestri.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-xs hover:text-foreground transition-colors duration-300 link-underline"
+          >
             Desenvolvido por Bueno & Maestri
-          </p>
+          </a>
         </div>
       </div>
     </footer>
