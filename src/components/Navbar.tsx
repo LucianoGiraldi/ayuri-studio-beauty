@@ -50,9 +50,9 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`font-body text-sm tracking-wide transition-colors duration-300 link-underline ${
+              className={`font-body text-sm tracking-wide transition-colors duration-300 link-underline pb-1 ${
                 location.pathname === link.path
-                  ? "text-foreground"
+                  ? "text-foreground after:scale-x-100 after:origin-bottom-left"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -72,7 +72,7 @@ const Navbar = () => {
             <Instagram size={20} />
           </a>
           <a
-            href="https://wa.me/5544998976408"
+            href="https://api.whatsapp.com/send/?phone=5544998976408&text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm"
@@ -102,9 +102,9 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`font-body text-lg tracking-wide transition-all duration-300 ${
+              className={`font-body text-lg tracking-wide transition-all duration-300 link-underline pb-1 ${
                 location.pathname === link.path
-                  ? "text-foreground"
+                  ? "text-foreground after:scale-x-100 after:origin-bottom-left"
                   : "text-muted-foreground"
               }`}
               style={{ animationDelay: `${index * 50}ms` }}
@@ -122,7 +122,7 @@ const Navbar = () => {
               <Instagram size={24} />
             </a>
             <a
-              href="https://wa.me/5544998976408"
+              href="'https://api.whatsapp.com/send/?phone=5544998976408&text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20&type=phone_number&app_absent=0 b '"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm flex-1 text-center"

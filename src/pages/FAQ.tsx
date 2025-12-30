@@ -121,7 +121,7 @@ const FAQ = () => {
                 Entre em contato pelo WhatsApp e teremos prazer em ajudar!
               </p>
               <a
-                href="https://wa.me/5544998976408"
+                href="https://api.whatsapp.com/send/?phone=5544998976408&text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20de%20tirar%20algumas%20duvidas%20&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center gap-2"
