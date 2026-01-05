@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Check } from "lucide-react";
-import studioImage from "@/assets/studio-interior.jpg";
+import studioImage from "@/assets/studio-interior.jpeg";
 import ayuriIcon from "@/assets/ayuri-icon.ico";
 
 const values = [
